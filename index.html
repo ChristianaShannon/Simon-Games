@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SimonGame</title>
+	<link href='https://fonts.font.im/css?family=Jolly+Lodger' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<div class="main noSelect">
+		<div class="wrap">
+			<div class="gameBoard">
+				<div class="mainbutton" id="red"></div>
+				<div class="mainbutton" id="green"></div>
+				<div class="mainbutton" id="yellow"></div>
+				<div class="mainbutton" id="blue"></div>
+			</div>
+			<div class="centerControl">
+				<h1>Simon Game</h1>
+				<div class="btnControl">
+					<div id="startModule">
+						<button id="startBtn"></button>
+						<label>Start</label>
+					</div>
+					<div id="strictModule">
+						<button id="strictBtn"></button>
+						<label>Strict</label>
+					</div>
+					<div id="countModule">
+						<div id="viewNum">
+							<div id="countNum">--</div>
+						</div>
+						<label>count</label>
+					</div>
+				</div>
+				<div class="onoffControl">
+					<label class="onLabel">Off</label>
+					<div class="powerSwitch close1">
+						<div class="switch close2"></div>
+					</div>
+					<label class="offLabel">On</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<audio id="soundred" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+		<audio id="soundgreen" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+		<audio id="soundyellow" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+		<audio id="soundblue" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+		<audio id="soundfail" preload="auto" src="http://www.freesound.org/data/previews/331/331912_3248244-lq.mp3"></audio>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
